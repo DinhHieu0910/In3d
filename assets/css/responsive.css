@@ -1,0 +1,36 @@
+/* Mobile & tablet */
+@media (max-width: 1023px) {
+    .hide-on-mobile-tablet {
+        display: none;
+    }
+}
+
+/* Tablet */
+@media (min-width: 740px) and (max-width: 1023px) {
+    .hide-on-tablet {
+        display: none;
+    }
+
+    .triple_block .block_item {
+        width: unset;
+        aspect-ratio: 3/5;
+    }
+}
+
+/* Mobile */
+@media (max-width: 739px) {
+    .hide-on-mobile {
+        display: none;
+    }
+
+    .triple_block .block_item {
+        width: unset;
+    }
+}
+
+/* Desktop */
+@media (min-width: 1023px) {
+    .hide-on-mobile-tablet {
+        display: none;
+    }
+}

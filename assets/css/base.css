@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@100;200;300;400;500;700&display=swap');
+@import url('header.css');
+
+* {
+    box-sizing: border-box;
+    object-fit: cover;
+}
+
+html, body {
+    font-family: 'BeVietnamPro', sans-serif;
+    font-size: 10px;
+    color: var(--main-text-color);
+
+    --main-bg-color: #dcdae4;
+    --second-bg-color: #ea4f3d;
+    
+    --main-text-color: #193264;
+    --second-text-color: #fff;
+    --highlight-text-color: #779cc1;
+
+    --swiper_arrow-bg-color: #96b0c9;
+    --swiper_arrow-color: #fff;
+}
+
+section {
+    font-size: 2.4rem;
+    overflow: hidden;
+}
+
+img {
+    width: 100%;
+}
+
+.bg_img {
+    background-size: 90% 100%;
+    background-repeat: no-repeat;
+    scale: 1.6;
+    opacity: .4;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.bg_img-relative {
+    position: relative;
+    overflow: hidden;
+}
+
+.swiper {
+    height: 300px;
+}
+
+.swiper .swiper-button-prev {
+    left: 0;
+}
+
+.swiper .swiper-button-next {
+    right: 0;
+}
+
+.swiper .swiper-button-prev,
+.swiper .swiper-button-next {
+    background-color: var(--swiper_arrow-bg-color);
+    color: var(--swiper_arrow-color);
+}
+
+.swiper .swiper-button-prev::after,
+.swiper .swiper-button-next::after {
+    font-size: 2.4rem;
+}
