@@ -271,6 +271,12 @@
 	<link rel='stylesheet' id='pt-cv-public-style-css'
 		href='https://noviocean.energy/wp-content/plugins/content-views-query-and-display-post-page/public/assets/css/cv.css?ver=4.0'
 		type='text/css' media='all' />
+	<style>
+		body:lang(vi) *:not(:lang(vi)),
+		body:lang(en) *:not(:lang(en)) {
+			display: none;
+		}
+	</style>
 	<style id='wp-emoji-styles-inline-css' type='text/css'>
 		img.wp-smiley,
 		img.emoji {
@@ -1313,7 +1319,7 @@
 	</style>
 </head>
 
-<body
+<body lang="en"
 	class="home page-template page-template-elementor_header_footer page page-id-14083 wp-custom-logo has-header-image elementor-default elementor-template-full-width elementor-kit-5683 elementor-page elementor-page-14083 modula-best-grid-gallery">
 	<div data-elementor-type="header" data-elementor-id="8436"
 		class="elementor elementor-8436 elementor-location-header" data-elementor-post-type="elementor_library">
@@ -1343,6 +1349,18 @@
 					data-id="6a53b0a8" data-element_type="column"
 					data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
 					<div class="elementor-widget-wrap elementor-element-populated">
+						<div data-wpr-sticky-section="yes" data-wpr-position-type="fixed" data-wpr-position-location="top" data-wpr-sticky-devices="mobile_sticky tablet_sticky desktop_sticky" data-wpr-z-index="10" data-wpr-sticky-type="" class="elementor-section elementor-inner-section elementor-element elementor-element-42644a72 elementor-section-full_width wpr-sticky-section-yes elementor-section-height-default elementor-section-height-default elementor-sticky" data-element_type="section" style="position: fixed; top: 4rem; right: .8rem;">
+							<div id="languageSwitch" style="position: relative; display: inline-block;">
+								<img id="current-flag" src="assets/resource/img/lang_en.png" alt="Current Language"
+									style="width: 50px; cursor: pointer;">
+								<div id="flag-options"
+									style="position: absolute; top: 40px; display: none; flex-direction: column; gap: 10px; background-color: #fff;">
+									<img id="flag-en" src="assets/resource/img/lang_en.png" alt="English" style="width: 50px; cursor: pointer;">
+									<img id="flag-vi" src="assets/resource/img/lang_vi.png" alt="Tiếng Việt"
+										style="width: 50px; cursor: pointer;">
+								</div>
+							</div>
+						</div>
 						<section data-wpr-sticky-section="yes" data-wpr-position-type="fixed"
 							data-wpr-position-offset="9" data-wpr-position-location="top"
 							data-wpr-sticky-devices="mobile_sticky tablet_sticky desktop_sticky"
@@ -1772,13 +1790,15 @@
 					<div class="elementor-element elementor-element-8a17b4f elementor-widget__width-initial elementor-widget elementor-widget-heading"
 						data-id="8a17b4f" data-element_type="widget" data-widget_type="heading.default">
 						<div class="elementor-widget-container">
-							<span class="elementor-heading-title elementor-size-default">BUILD BEYOND LIMITS, WITH ADDITIVE MANUFACTURING</span>
+							<span lang="en" class="elementor-heading-title elementor-size-default">BUILD BEYOND LIMITS, WITH ADDITIVE MANUFACTURING</span>
+							<span lang="vi" class="elementor-heading-title elementor-size-default">XÂY DỰNG VƯỢT QUA GIỚI HẠN, VỚI CÔNG NGHỆ SẢN XUẤT BỔ SUNG</span>
 						</div>
 					</div>
 					<div class="elementor-element elementor-element-ba871ac elementor-widget__width-initial elementor-widget elementor-widget-heading"
 						data-id="ba871ac" data-element_type="widget" data-widget_type="heading.default">
 						<div class="elementor-widget-container">
-							<span class="elementor-heading-title elementor-size-default">Manufacture with no limits in scale, shape, or materials, with our Additive Manufacturing technologies: integrated Large Format Additive Manufacturing (LFAM) platforms for large scale components.</span>
+							<span lang="en" class="elementor-heading-title elementor-size-default">Manufacture with no limits in scale, shape, or materials, with our Additive Manufacturing technologies: integrated Large Format Additive Manufacturing (LFAM) platforms for large scale components.</span>
+							<span lang="vi" class="elementor-heading-title elementor-size-default">Sản xuất không giới hạn về quy mô, hình dạng hoặc vật liệu, với công nghệ Sản xuất Bổ sung của chúng tôi: nền tảng Sản xuất Bổ sung Định dạng Lớn (LFAM) tích hợp cho các thành phần quy mô lớn.</span>
 						</div>
 					</div>
 				</div>
@@ -5999,5 +6019,6 @@ hopes that the company can scale up the solution in collaboration with offshore 
 		});
 	</script>
 
+	<script src="assets\js\lang.js"></script>
 </body>
 </html>
