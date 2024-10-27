@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@100;200;300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@100;200;300;400;500;700;900&display=swap');
 @import url('header.css');
 
 * {
@@ -21,4 +21,12 @@ html, body {
 
 img {
     width: 100%;
+}
+
+.elementor-element {
+    background-image: none !important;
+}
+
+[lang="vi"], [lang="vi"] * {
+    font-family: 'BeVietnamPro', sans-serif !important;
 }

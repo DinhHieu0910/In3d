@@ -8,8 +8,3 @@
     align-items: center;
     height: 2.8em;
 }
-
-.elementor-element.elementor-element-a0cfc0c:not(.elementor-motion-effects-element-type-background), .elementor-14083 .elementor-element.elementor-element-a0cfc0c > .elementor-motion-effects-container > .elementor-motion-effects-layer {
-    background: url(..\resource\img\background.jpg) 50% 50% !important;
-    background-size: cover;
-}

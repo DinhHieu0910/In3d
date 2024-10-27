@@ -17,6 +17,10 @@
     .hide-on-mobile {
         display: none;
     }
+
+    .logo-img {
+        max-width: 7em !important;
+    }
 }
 
 /* Desktop */
