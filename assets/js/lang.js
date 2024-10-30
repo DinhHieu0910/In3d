@@ -1,6 +1,10 @@
-function loadLanguage(lang, flagSrc) {
-    document.body.lang = lang
-    document.getElementById('current-flag').src = flagSrc;
+function loadLanguage(lang) {
+    document.body.lang = lang;
+    localStorage.setItem('language', lang);
+
+    let flagSrcEn = document.getElementById('flag-en').src;
+    let flagSrcVi = document.getElementById('flag-vi').src;
+    document.getElementById('current-flag').src = lang == 'en' ? flagSrcEn : flagSrcVi;
     document.getElementById('flag-options').style.display = 'none';
 }
 
@@ -13,9 +17,14 @@ document.getElementById('languageSwitch').addEventListener('mouseleave', () => {
 });
 
 document.getElementById('flag-en').addEventListener('click', () => {
-    loadLanguage('en', 'assets/resource/img/lang_en.png');
+    loadLanguage('en');
 });
 
 document.getElementById('flag-vi').addEventListener('click', () => {
-    loadLanguage('vi', 'assets/resource/img/lang_vi.png');
+    loadLanguage('vi');
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+    let language = localStorage.getItem('language');
+    if (language) loadLanguage(language);
 });
